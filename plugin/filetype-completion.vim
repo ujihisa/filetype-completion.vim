@@ -6,7 +6,8 @@
 
 " filetype completion hacks
 fun! FiletypeCompletion(lead,cmd,pos)
-  let list = glob(expand('$VIMRUNTIME/syntax'). '/*.vim')
+  let list = glob(expand('$VIMRUNTIME/syntax'). '/*.vim') .
+        \ glob(expand('$HOME/.vim/syntax'). '/*.vim')
   let items = split(list,"\n")
   cal map(items,'matchstr(v:val,''\w\+\(.vim$\)\@='')')
   cal filter(items,"v:val =~ '^" . a:lead . "'")
