@@ -1,6 +1,7 @@
 
 " Author:  Cornelius  <cornelius.howl@gmail.com>
-" Date: 一 12/21 20:29:23 2009
+"          Tatsuhiro Ujihisa <ujihisa@gmail.com>
+" Date: 一 Sat Jan  2 08:03:54 PST 2010
 " Script type: plugin
 " Script id:   2893
 
